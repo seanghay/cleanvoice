@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
   name="cleanvoice",
-  version="0.0.1",
+  version="0.0.2",
   description="A Fast Speech Enhancement toolkit using Conv-TasNet",
   long_description=long_description,
   long_description_content_type="text/markdown",

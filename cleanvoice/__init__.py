@@ -37,8 +37,7 @@ def cleanvoice(audio: Union[str, np.ndarray]) -> np.ndarray:
   # audio must be resampled to 16kHz
   if isinstance(audio, np.ndarray):
     y = audio
-
-  if isinstance(audio, str):
+  else:
     y, _ = librosa.load(audio, sr=16000, mono=True)
 
   if y is None:
